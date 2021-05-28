@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".view.MainActivity">
+    <EditText
+        android:id="@+id/etFruitName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fruit Name"/>
+    <EditText
+        android:id="@+id/etFruitDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="4"
+        android:hint="Fruit Description"/>
+    <Button
+        android:id="@+id/btAddFruit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Fruit"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFruits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
